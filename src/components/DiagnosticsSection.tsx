@@ -25,7 +25,7 @@ export const DiagnosticsSection = () => {
         <Car3D />
         <div className="text-center space-y-4">
           <div className="space-y-2">
-            <h3 className="text-lg font-light text-white">Model 3 Performance</h3>
+            <h3 className="text-lg font-light text-white">Cybertruck</h3>
             <p className="text-sm text-gray-400">VIN: 5YJ3E1EA9KF123456</p>
             <div className="flex items-center justify-center space-x-2">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
