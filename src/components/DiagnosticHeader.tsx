@@ -1,13 +1,18 @@
-
 import React from 'react';
 import { Activity, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export const DiagnosticHeader = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="bg-black border-b border-gray-800">
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
+          <div 
+            className="flex items-center space-x-4 cursor-pointer hover:opacity-80 transition-opacity"
+            onClick={() => navigate('/')}
+          >
             <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl shadow-lg">
               <Zap className="w-7 h-7 text-white" />
             </div>

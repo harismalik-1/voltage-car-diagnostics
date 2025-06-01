@@ -1,16 +1,14 @@
-
 import React from 'react';
 import { Car3D } from './Car3D';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Play, Zap } from 'lucide-react';
 
-export const DiagnosticsSection = () => {
-  const handleRunDiagnostics = () => {
-    console.log('Running diagnostics...');
-    // Add diagnostics logic here
-  };
+interface DiagnosticsSectionProps {
+  onRunDiagnostics: () => void;
+}
 
+export const DiagnosticsSection: React.FC<DiagnosticsSectionProps> = ({ onRunDiagnostics }) => {
   return (
     <Card className="bg-gray-900/50 border-gray-800 backdrop-blur-sm">
       <CardHeader>
@@ -33,7 +31,7 @@ export const DiagnosticsSection = () => {
             </div>
           </div>
           <Button 
-            onClick={handleRunDiagnostics}
+            onClick={onRunDiagnostics}
             className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-light py-3 rounded-lg transition-all duration-300 transform hover:scale-105"
           >
             <Play className="w-4 h-4 mr-2" />
