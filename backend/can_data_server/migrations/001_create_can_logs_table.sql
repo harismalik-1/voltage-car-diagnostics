@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS can_logs (
+  id SERIAL PRIMARY KEY,
+  filename VARCHAR(255) NOT NULL UNIQUE,
+  description TEXT,
+  uploaded_at TIMESTAMPTZ DEFAULT NOW()
+);
