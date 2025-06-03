@@ -1,0 +1,5 @@
+# Ignore CSV files
+*.csv
+
+# Ignore data folder
+can_data/ 

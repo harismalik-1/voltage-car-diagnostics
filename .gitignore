@@ -1,3 +1,6 @@
+ml/can_data.csv
+ml/can_data/
+
 # Logs
 logs
 *.log
