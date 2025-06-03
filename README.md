@@ -50,7 +50,7 @@ node app.js
 ```
 The server will run at `http://localhost:3000`.
 
-### 2. ML Evaluation Server (FastAPI or similar)
+### 2. ML Evaluation Server (FastAPI)
 - **Purpose:**
   - Receives uploaded CAN data, runs LSTM-based anomaly detection, and returns results
 - **Why a separate ML server?**
